@@ -1,0 +1,30 @@
+{
+  "name": "@theorylabs/monorepo",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": [
+    "workspaces/States/clock",
+    "workspaces/Hooks/use-interval",
+    "workspaces/Layouts/page",
+    "workspaces/Components/bar",
+    "workspaces/Components/clock",
+    "workspaces/Components/counter",
+    "workspaces/Components/nav",
+    "workspaces/Apps/web"
+  ],
+  "scripts": {
+    "dev": "ultra --raw -r --filter '@theorylabs/web' dev",
+    "build": "ultra --raw -r --filter '@theorylabs/web' build",
+    "start": "ultra --raw -r --filter '@theorylabs/web' start"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "zustand": "^3.5.4"
+  },
+  "devDependencies": {
+    "next-transpile-modules": "^8.0.0",
+    "ultra-runner": "^3.10.5"
+  }
+}

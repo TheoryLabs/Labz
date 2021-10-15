@@ -1,0 +1,18 @@
+{
+  "name": "@theorylabs/clock-component",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": true,
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "zustand": "^3.5.4"
+  },
+  "dependencies": {
+    "@theorylabs/clock-state": "0.0.1"
+  }
+}

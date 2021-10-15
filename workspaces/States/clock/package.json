@@ -1,0 +1,14 @@
+{
+  "name": "@theorylabs/clock-state",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "zustand": "^3.5.4"
+  }
+}
