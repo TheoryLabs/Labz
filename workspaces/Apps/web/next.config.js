@@ -27,7 +27,8 @@ const withTM = require('next-transpile-modules')([
   '@theorylabs/counter-component',
   '@theorylabs/nav-component',
   '@theorylabs/use-interval-hook',
-  '@theorylabs/bar'
+  '@theorylabs/person-component',
+  '@theorylabs/people-data'
 ]);
 
 module.exports = withPlugins([ withTM ], {

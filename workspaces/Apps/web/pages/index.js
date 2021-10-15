@@ -1,13 +1,27 @@
+import useSWR from 'swr'
+
 import Page from '@theorylabs/page-layout'
-
-// export default function Index() {
-//   return <Page />
-// }
+import Person from '@theorylabs/person-component'
 
 
-// import foo from 'foo'
-// import Bar from '@theorylabs/bar'
+const fetcher = (url) => fetch(url).then((res) => res.json())
+
+
 
 export default function Index() {
-  return (<Page />)
+  const { data, error } = useSWR('/api/people', fetcher)
+
+  if (error) return <div>Failed to load</div>
+  if (!data) return <div>Loading...</div>
+
+  return (
+    <>
+    <Page />
+    <ul>
+      {data.map((p, i) => (
+        <Person key={i} person={p} />
+      ))}
+    </ul>
+    </>
+  )
 }

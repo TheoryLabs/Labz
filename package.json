@@ -3,10 +3,11 @@
   "version": "0.0.1",
   "private": true,
   "workspaces": [
+    "workspaces/Persistence/people-data",
     "workspaces/States/clock",
     "workspaces/Hooks/use-interval",
     "workspaces/Layouts/page",
-    "workspaces/Components/bar",
+    "workspaces/Components/person",
     "workspaces/Components/clock",
     "workspaces/Components/counter",
     "workspaces/Components/nav",
@@ -21,7 +22,8 @@
     "next": "latest",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "zustand": "^3.5.4"
+    "zustand": "^3.5.4",
+    "swr": "^1.0.1"
   },
   "devDependencies": {
     "next-transpile-modules": "^8.0.0",

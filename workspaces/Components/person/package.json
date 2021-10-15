@@ -1,5 +1,5 @@
 {
-  "name": "@theorylabs/nav-component",
+  "name": "@theorylabs/person-component",
   "version": "0.0.1",
   "license": "MIT",
   "private": true,
@@ -11,8 +11,5 @@
   "peerDependencies": {
     "react": "^17.0.2",
     "next": "latest"
-  },
-  "dependencies": {
-    "swr": "^1.0.1"
   }
 }

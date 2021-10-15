@@ -2,7 +2,7 @@ import useInterval from '@theorylabs/use-interval-hook'
 import Clock from '@theorylabs/clock-component'
 import Counter from '@theorylabs/counter-component'
 import Nav from '@theorylabs/nav-component'
-import Bar from '@theorylabs/bar'
+import Person from '@theorylabs/person-component'
 import { useStore } from '@theorylabs/clock-state'
 
 
@@ -19,7 +19,6 @@ export default function Page() {
       <Nav />
       <Clock />
       <Counter />
-      <Bar />
     </>
   )
 }

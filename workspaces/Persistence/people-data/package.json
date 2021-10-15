@@ -1,7 +1,6 @@
 {
-  "name": "@theorylabs/nav-component",
+  "name": "@theorylabs/people-data",
   "version": "0.0.1",
-  "license": "MIT",
   "private": true,
   "main": "./index.js",
   "exports": {
@@ -9,10 +8,6 @@
     "./package.json": "./package.json"
   },
   "peerDependencies": {
-    "react": "^17.0.2",
-    "next": "latest"
-  },
-  "dependencies": {
-    "swr": "^1.0.1"
+    "react": "^17.0.2"
   }
 }
